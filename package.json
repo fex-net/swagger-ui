@@ -2,7 +2,7 @@
   "name": "swagger-ui",
   "version": "3.7.0",
   "main": "dist/swagger-ui.js",
-  "repository": "git@github.com:swagger-api/swagger-ui.git",
+  "repository": "git@github.com:fex-net/swagger-ui.git",
   "contributors": [
     "(in alphabetical order)",
     "Anna Bodnia <anna.bodnia@gmail.com>",

@@ -424,7 +424,7 @@ export const validateFile = ( val ) => {
 }
 
 export const validateBoolean = ( val ) => {
-  if ( !(val === "true" || val === "false" || val === true || val === false) ) {
+  if ( !(val === "1" || val === "0" || val === 1 || val === 0) ) {
     return "Value must be a boolean"
   }
 }
@@ -496,7 +496,7 @@ export const validateParam = (param, isXml, isOAS3 = false) => {
     let arrayCheck = type === "array" && Array.isArray(value) && value.length
     let listCheck = type === "array" && Im.List.isList(value) && value.count()
     let fileCheck = type === "file" && value instanceof win.File
-    let booleanCheck = type === "boolean" && (value || value === false)
+    let booleanCheck = type === "boolean" && (value || value === 0)
     let numberCheck = type === "number" && (value || value === 0)
     let integerCheck = type === "integer" && (value || value === 0)
 
